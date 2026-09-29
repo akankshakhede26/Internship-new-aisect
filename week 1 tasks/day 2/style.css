@@ -1,0 +1,180 @@
+/* Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4f46e5;
+    color: white;
+    text-align: center;
+
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Sections - Box Model */
+section {
+    background-color: white;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Section Headings */
+section h2 {
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+}
+
+.about img {
+    display: block;
+
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    margin: 20px auto;
+
+    border-radius: 50%;
+    border: 5px solid #4f46e5;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Skills */
+.skills ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #3730a3;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .about img {
+        width: 150px;
+        height: 150px;
+    }
+}
