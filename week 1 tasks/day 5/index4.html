@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Practical</title>
+
+    <link rel="stylesheet" href="style4.css">
+   
+</head>
+
+<body>
+
+    <h1>JavaScript Practical</h1>
+
+
+    <!-- ================= TASK 1 ================= -->
+
+    <div class="box">
+
+        <h2>Task 1 – Interactive Buttons</h2>
+
+        <p id="text">
+            This is interactive text. Change my color, font and size.
+        </p>
+
+        <h3>Change Text Color</h3>
+
+        <button onclick="changeColor('red')">RED</button>
+        <button onclick="changeColor('green')">GREEN</button>
+        <button onclick="changeColor('blue')">BLUE</button>
+
+
+        <h3>Change Font Family</h3>
+
+        <select onchange="changeFont(this.value)">
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+
+        <h3>Change Font Size</h3>
+
+        <button onclick="increaseSize()">A+</button>
+        <button onclick="decreaseSize()">A-</button>
+
+
+        <h3>Font Style – Mouse Over</h3>
+
+        <button onmouseover="makeBold()"
+                onmouseout="removeBold()">
+            Bold
+        </button>
+
+        <button onmouseover="makeItalic()"
+                onmouseout="removeItalic()">
+            Italic
+        </button>
+
+        <button onmouseover="makeUnderline()"
+                onmouseout="removeUnderline()">
+            Underline
+        </button>
+
+    </div>
+
+
+    <!-- ================= TASK 2 ================= -->
+
+    <div class="box">
+
+        <h2>Task 2 – Simple Form Validation</h2>
+
+        <form onsubmit="validateForm(event)">
+
+            <label>Name:</label>
+            <input type="text" id="name">
+
+            <br>
+
+            <label>Email:</label>
+            <input type="email" id="email">
+
+            <br>
+
+            <label>Mobile:</label>
+            <input type="text" id="mobile">
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+            <p id="formMessage" class="message"></p>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= TASK 3 ================= -->
+
+    <div class="box">
+
+        <h2>Task 3 – Simple Calculator</h2>
+
+        <input type="number" id="num1" placeholder="Enter first number">
+
+        <input type="number" id="num2" placeholder="Enter second number">
+
+        <br>
+
+        <button onclick="calculate('+')">Add</button>
+        <button onclick="calculate('-')">Subtract</button>
+        <button onclick="calculate('*')">Multiply</button>
+        <button onclick="calculate('/')">Divide</button>
+
+        <p id="calcMessage" class="message"></p>
+
+    </div>
+
+
+    <!-- ================= BONUS ================= -->
+
+    <div class="box">
+
+        <h2>Bonus – Theme Switcher</h2>
+
+        <button onclick="lightTheme()">Light</button>
+        <button onclick="darkTheme()">Dark</button>
+
+    </div>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
+

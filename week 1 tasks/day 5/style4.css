@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input,
+select {
+    padding: 8px;
+    margin: 5px;
+}
+
+#text {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.dark {
+    background-color: #222;
+    color: white;
+}
