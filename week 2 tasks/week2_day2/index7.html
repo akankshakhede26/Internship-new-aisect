@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - Array Methods: map(), filter(), reduce()</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <span class="badge">Week 2 • Day 2</span>
+            <h1>Array Methods in JavaScript</h1>
+            <p class="subtitle">Exploring <code>map()</code>, <code>filter()</code>, and <code>reduce()</code> with real-world examples</p>
+            <button id="run-btn" class="primary-btn" onclick="runTasks()">Run Tasks in Console</button>
+        </header>
+
+        <main class="grid-container">
+            <!-- Task 1 Card -->
+            <section class="card" id="task-1-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 1</span>
+                    <h2>Data Transformation</h2>
+                </div>
+                <p class="task-desc">Filter prices > 250 and apply a 10% discount using <code>map()</code>.</p>
+                <div class="code-snippet">
+                    <code>const prices = [120, 250, 300, 450, 600];</code>
+                </div>
+                <div class="results-box">
+                    <div class="result-row">
+                        <span class="label">Filtered (> 250):</span>
+                        <span class="value" id="t1-filtered">[ 300, 450, 600 ]</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Discounted (10% off):</span>
+                        <span class="value highlight" id="t1-discounted">[ 270, 405, 540 ]</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task 2 Card -->
+            <section class="card" id="task-2-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 2</span>
+                    <h2>Total Expense</h2>
+                </div>
+                <p class="task-desc">Calculate the sum of all expenses using <code>reduce()</code>.</p>
+                <div class="code-snippet">
+                    <code>Food (₹300) + Transport (₹150) + Shopping (₹400)</code>
+                </div>
+                <div class="results-box highlight-box">
+                    <span class="label">Total Expense:</span>
+                    <span class="value total-badge" id="t2-total">₹850</span>
+                </div>
+            </section>
+
+            <!-- Task 3 Card -->
+            <section class="card" id="task-3-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 3</span>
+                    <h2>Chaining Methods</h2>
+                </div>
+                <p class="task-desc">Filter passing scores (≥50), add +10 bonus marks, and sum them.</p>
+                <div class="code-snippet">
+                    <code>scores = [45, 80, 90, 35, 60, 75]</code>
+                </div>
+                <div class="results-box">
+                    <div class="result-row">
+                        <span class="label">Passed (≥ 50):</span>
+                        <span class="value" id="t3-passed">[ 80, 90, 60, 75 ]</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Bonus (+10):</span>
+                        <span class="value" id="t3-bonus">[ 90, 100, 70, 85 ]</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Total Sum:</span>
+                        <span class="value highlight" id="t3-total">345</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mini Challenge Card -->
+            <section class="card full-width" id="mini-challenge-card">
+                <div class="card-header">
+                    <span class="card-tag challenge-tag">Mini Challenge</span>
+                    <h2>Student Score Analyzer</h2>
+                </div>
+                <p class="task-desc">Filter passed students (marks ≥ 50), add +5 bonus marks, and compute class average.</p>
+                
+                <div class="students-grid">
+                    <div class="student-card pass">
+                        <div class="student-info">
+                            <span class="name">Aman</span>
+                            <span class="status">Original: 85 + 5 Bonus</span>
+                        </div>
+                        <div class="final-score">90</div>
+                    </div>
+                    <div class="student-card pass">
+                        <div class="student-info">
+                            <span class="name">Riya</span>
+                            <span class="status">Original: 68 + 5 Bonus</span>
+                        </div>
+                        <div class="final-score">73</div>
+                    </div>
+                    <div class="student-card fail">
+                        <div class="student-info">
+                            <span class="name">Sara</span>
+                            <span class="status">Original: 42 (Below 50)</span>
+                        </div>
+                        <div class="final-score strike">Failed</div>
+                    </div>
+                    <div class="student-card fail">
+                        <div class="student-info">
+                            <span class="name">John</span>
+                            <span class="status">Original: 49 (Below 50)</span>
+                        </div>
+                        <div class="final-score strike">Failed</div>
+                    </div>
+                </div>
+
+                <div class="summary-banner">
+                    <span>Class Average of Passed Students:</span>
+                    <span class="stat-highlight">81.5</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script7.js"></script>
+</body>
+</html>
