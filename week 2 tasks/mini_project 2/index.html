@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-box">
+        <h1>🌤️ Weather App</h1>
+        <p class="subtitle">Check live weather for any city</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g. Delhi, Mumbai)" autofocus>
+            <button id="searchBtn" onclick="getWeather()">Search</button>
+        </div>
+
+        <!-- Weather Result Section -->
+        <div id="weatherResult">
+            <!-- Weather details will be dynamically shown here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
