@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - API Practice</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Day 4 - Random User API Tasks</h1>
+
+        <!-- ===================================== -->
+        <!-- Task 1: Random User Card -->
+        <!-- ===================================== -->
+        <div class="box">
+            <h2>Task 1: Random User Card</h2>
+            <div class="card">
+                <img id="user-img" src="" alt="Profile Picture">
+                <h3 id="user-name">Loading...</h3>
+                <p id="user-email"></p>
+                <button onclick="getUser()">Get New User</button>
+            </div>
+        </div>
+
+        <!-- ===================================== -->
+        <!-- Task 2 & Mini Challenge: User Directory -->
+        <!-- ===================================== -->
+        <div class="box">
+            <h2>Task 2 & Mini Challenge: User Directory</h2>
+            <button onclick="loadUsers()">Refresh Users</button>
+            <div id="userList" class="grid-container"></div>
+        </div>
+    </div>
+
+    <script src="script8.js"></script>
+</body>
+</html>
