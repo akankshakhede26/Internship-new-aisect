@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 - Asynchronous JavaScript: setTimeout, Promises & Async/Await</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <span class="badge">Week 2 • Day 3</span>
+            <h1>Asynchronous JavaScript</h1>
+            <p class="subtitle">Exploring <code>setTimeout</code>, <code>Promises</code>, and <code>async / await</code> with real APIs</p>
+            <button id="run-btn" class="primary-btn" onclick="runTasks()">Run Tasks in Console</button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="grid-container">
+
+            <!-- Task 1 Card -->
+            <section class="card" id="task-1-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 1</span>
+                    <h2>Simulate API Call with setTimeout</h2>
+                </div>
+                <p class="task-desc">Simulate an API call delay of 2 seconds using <code>setTimeout()</code> and a nested timeout for data processing.</p>
+                <div class="code-snippet">
+                    <code>fakeAPICall(); // 2000ms delay &rarr; "User data received ✅"</code>
+                </div>
+                <div class="results-box">
+                    <div class="result-row">
+                        <span class="label">Step 1 (API Call):</span>
+                        <span class="value" id="t1-initial">User data received ✅</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Step 2 (Nested Extension):</span>
+                        <span class="value highlight" id="t1-extension">Processing Data... ⚙️ &rarr; Done 🚀</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Task 2 Card -->
+            <section class="card" id="task-2-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 2</span>
+                    <h2>Promise Example (.then / .catch)</h2>
+                </div>
+                <p class="task-desc">Using a Promise to handle online success (<code>resolve</code>) and network error (<code>reject</code>).</p>
+                <div class="code-snippet">
+                    <code>simulateFetch.then(msg => console.log(msg)).catch(err => ...);</code>
+                </div>
+                <div class="results-box highlight-box">
+                    <span class="label">Promise Result:</span>
+                    <span class="value total-badge" id="t2-result">Data fetched successfully ✅</span>
+                </div>
+            </section>
+
+            <!-- Task 3 Card -->
+            <section class="card" id="task-3-card">
+                <div class="card-header">
+                    <span class="card-tag">Task 3</span>
+                    <h2>Async/Await with Fetch</h2>
+                </div>
+                <p class="task-desc">Fetch 5 latest posts from JSONPlaceholder using modern <code>async/await</code> and <code>try...catch</code>.</p>
+                <div class="code-snippet">
+                    <code>fetch("https://jsonplaceholder.typicode.com/posts?_limit=5")</code>
+                </div>
+                <div class="results-box">
+                    <div class="result-row">
+                        <span class="label">Post #1:</span>
+                        <span class="value">sunt aut facere repellat provident</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Post #2:</span>
+                        <span class="value">qui est esse</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Post #3:</span>
+                        <span class="value">ea molestias quasi exercitationem</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Post #4:</span>
+                        <span class="value">eum et est occaecati</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Post #5:</span>
+                        <span class="value">nesciunt quas odio</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mini Challenge Card -->
+            <section class="card full-width" id="mini-challenge-card">
+                <div class="card-header">
+                    <span class="card-tag challenge-tag">Mini Challenge</span>
+                    <h2>Weather Fetcher (Open-Meteo API)</h2>
+                </div>
+                <p class="task-desc">Fetches live weather for New Delhi (28.61° N, 77.23° E), displays temperature and wind speed, and handles errors gracefully.</p>
+                
+                <!-- Weather Stats Grid -->
+                <div class="weather-grid">
+                    <div class="weather-box">
+                        <span class="weather-label">🌡️ Current Temp</span>
+                        <span class="weather-val" id="weather-temp">29.3°C</span>
+                    </div>
+                    <div class="weather-box">
+                        <span class="weather-label">💨 Wind Speed</span>
+                        <span class="weather-val" id="weather-wind">5.6 km/h</span>
+                    </div>
+                    <div class="weather-box">
+                        <span class="weather-label">📍 Location</span>
+                        <span class="weather-val location-val">New Delhi, IN</span>
+                    </div>
+                </div>
+
+                <div class="summary-banner">
+                    <span>API Status:</span>
+                    <span class="stat-highlight">Weather Fetched Gracefully ✅</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="script7.js"></script>
+</body>
+</html>
