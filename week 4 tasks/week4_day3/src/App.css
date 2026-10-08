@@ -1,0 +1,168 @@
+/* Main App Layout Styles with Theme Classes */
+
+/* Smooth animation transitions between themes */
+.App,
+.App * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.content {
+  flex: 1;
+}
+
+/* ========================================================
+   Theme Definitions: light, dark, blue, green, neon
+   ======================================================== */
+
+/* 1. Light Theme (Default) */
+.App.light-theme {
+  --bg-color: #f4f6f9;
+  --text-color: #333333;
+  --heading-color: #1e293b;
+  --muted-text: #64748b;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --nav-bg: #ffffff;
+  --brand-color: #007bff;
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --secondary-color: #6c757d;
+  --nav-link-color: #495057;
+  --nav-link-hover-bg: #f1f5f9;
+  --nav-link-hover-color: #007bff;
+  --toggle-bg: #f1f5f9;
+  --toggle-text: #333333;
+  --btn-hover: #e2e8f0;
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --box-bg-subtle: #f8fafc;
+  --dynamic-box-bg: #eef2ff;
+  --dynamic-box-border: #c7d2fe;
+  --dynamic-box-text: #3730a3;
+  --highlight-bg: #dbeafe;
+  --highlight-text: #1e40af;
+  --footer-bg: #ffffff;
+}
+
+/* 2. Dark Theme */
+.App.dark-theme {
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
+  --heading-color: #f8fafc;
+  --muted-text: #94a3b8;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --nav-bg: #1e293b;
+  --brand-color: #38bdf8;
+  --primary-color: #38bdf8;
+  --primary-hover: #0284c7;
+  --secondary-color: #64748b;
+  --nav-link-color: #cbd5e1;
+  --nav-link-hover-bg: #334155;
+  --nav-link-hover-color: #38bdf8;
+  --toggle-bg: #334155;
+  --toggle-text: #f8fafc;
+  --btn-hover: #475569;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --box-bg-subtle: #0f172a;
+  --dynamic-box-bg: #1e3a5f;
+  --dynamic-box-border: #2563eb;
+  --dynamic-box-text: #93c5fd;
+  --highlight-bg: #1e3a8a;
+  --highlight-text: #bfdbfe;
+  --footer-bg: #1e293b;
+}
+
+/* 3. Blue Theme (Extra Theme Add-on) */
+.App.blue-theme {
+  --bg-color: #0b192c;
+  --text-color: #e0f2fe;
+  --heading-color: #ffffff;
+  --muted-text: #7dd3fc;
+  --card-bg: #1e3e62;
+  --border-color: #000000;
+  --nav-bg: #1e3e62;
+  --brand-color: #00ffff;
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --secondary-color: #475569;
+  --nav-link-color: #bae6fd;
+  --nav-link-hover-bg: #0b192c;
+  --nav-link-hover-color: #38bdf8;
+  --toggle-bg: #0b192c;
+  --toggle-text: #e0f2fe;
+  --btn-hover: #000000;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --box-bg-subtle: #0b192c;
+  --dynamic-box-bg: #0b192c;
+  --dynamic-box-border: #38bdf8;
+  --dynamic-box-text: #7dd3fc;
+  --highlight-bg: #0284c7;
+  --highlight-text: #ffffff;
+  --footer-bg: #1e3e62;
+}
+
+/* 4. Green Theme (Extra Theme Add-on) */
+.App.green-theme {
+  --bg-color: #052e16;
+  --text-color: #ecfdf5;
+  --heading-color: #ffffff;
+  --muted-text: #6ee7b7;
+  --card-bg: #064e3b;
+  --border-color: #047857;
+  --nav-bg: #064e3b;
+  --brand-color: #34d399;
+  --primary-color: #10b981;
+  --primary-hover: #059669;
+  --secondary-color: #334155;
+  --nav-link-color: #a7f3d0;
+  --nav-link-hover-bg: #052e16;
+  --nav-link-hover-color: #34d399;
+  --toggle-bg: #052e16;
+  --toggle-text: #ecfdf5;
+  --btn-hover: #022c22;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --box-bg-subtle: #052e16;
+  --dynamic-box-bg: #052e16;
+  --dynamic-box-border: #10b981;
+  --dynamic-box-text: #a7f3d0;
+  --highlight-bg: #047857;
+  --highlight-text: #ffffff;
+  --footer-bg: #064e3b;
+}
+
+/* 5. Neon Theme (Extra Theme Add-on) */
+.App.neon-theme {
+  --bg-color: #090014;
+  --text-color: #fae8ff;
+  --heading-color: #f472b6;
+  --muted-text: #d8b4fe;
+  --card-bg: #170529;
+  --border-color: #c026d3;
+  --nav-bg: #170529;
+  --brand-color: #f43f5e;
+  --primary-color: #d946ef;
+  --primary-hover: #c026d3;
+  --secondary-color: #4c1d95;
+  --nav-link-color: #f0abfc;
+  --nav-link-hover-bg: #090014;
+  --nav-link-hover-color: #f472b6;
+  --toggle-bg: #090014;
+  --toggle-text: #fae8ff;
+  --btn-hover: #2e0854;
+  --box-shadow: 0 0 15px rgba(217, 70, 239, 0.25);
+  --box-bg-subtle: #090014;
+  --dynamic-box-bg: #090014;
+  --dynamic-box-border: #d946ef;
+  --dynamic-box-text: #f0abfc;
+  --highlight-bg: #c026d3;
+  --highlight-text: #ffffff;
+  --footer-bg: #170529;
+}
