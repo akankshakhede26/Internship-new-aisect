@@ -3,17 +3,17 @@ import Card from "../components/Card";
 import { RevenueChart, TrafficChart } from "../components/ChartPanel";
 
 const stats = [
-  { title: "Total revenue", value: "$48,294", change: "+12.8%", icon: Wallet, tone: "indigo", note: "from last month" },
+  { title: "Total revenue", value: "48,294", change: "+12.8%", icon: Wallet, tone: "indigo", note: "from last month" },
   { title: "Total users", value: "12,840", change: "+8.2%", icon: Users, tone: "emerald", note: "from last month" },
   { title: "Total orders", value: "1,284", change: "+4.6%", icon: ShoppingBag, tone: "amber", note: "from last month" },
   { title: "Conversion rate", value: "3.64%", change: "+1.2%", icon: Activity, tone: "rose", note: "from last month" },
 ];
 
 const orders = [
-  { id: "#ORD-2048", name: "Olivia Martin", email: "olivia@example.com", product: "Pro plan", amount: "$249.00", status: "Completed", initials: "OM", color: "bg-pink-100 text-pink-700" },
-  { id: "#ORD-2047", name: "Jackson Lee", email: "jackson@example.com", product: "Team plan", amount: "$129.00", status: "Processing", initials: "JL", color: "bg-sky-100 text-sky-700" },
-  { id: "#ORD-2046", name: "Isabella Nguyen", email: "isabella@example.com", product: "Starter plan", amount: "$49.00", status: "Completed", initials: "IN", color: "bg-amber-100 text-amber-800" },
-  { id: "#ORD-2045", name: "William Kim", email: "william@example.com", product: "Pro plan", amount: "$249.00", status: "Pending", initials: "WK", color: "bg-violet-100 text-violet-700" },
+  { id: "#ORD-2048", name: " sahil kelker ", email: "sahilkelker29@gmail.com", product: "Pro plan", amount: "249.00", status: "Completed", initials: "OM", color: "bg-pink-100 text-pink-700" },
+  { id: "#ORD-2047", name: "Kittu Jadhamm", email: "kittujadhamm60@gmail.com", product: "Team plan", amount: "129.00", status: "Processing", initials: "JL", color: "bg-sky-100 text-sky-700" },
+  { id: "#ORD-2046", name: "saloni chouhan", email: "salonichouhan@gmail.com", product: "Starter plan", amount: "349.00", status: "Completed", initials: "IN", color: "bg-amber-100 text-amber-800" },
+  { id: "#ORD-2045", name: "krishna raverker", email: "krishnaraverker@gmail.com", product: "Pro plan", amount: "249.00", status: "Pending", initials: "WK", color: "bg-violet-100 text-violet-700" },
 ];
 
 export default function Dashboard() {
