@@ -1,54 +1,144 @@
+/* =========================================
+   My Portfolio - Akanksha Khede
+   Week 2 Day 5 (Light Theme)
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Portfolio Card */
+.portfolio-card {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
     text-align: center;
-    padding: 20px;
-    color: #333;
 }
 
+/* Header */
 h1 {
-    margin-bottom: 5px;
+    font-size: 26px;
+    color: #0f172a;
+    margin-bottom: 6px;
 }
 
-h2 {
-    color: #007bff;
-    margin-top: 25px;
-    margin-bottom: 10px;
+.subtitle {
+    font-size: 15px;
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
+/* Button */
 button {
-    padding: 8px 16px;
-    background-color: #007bff;
+    padding: 9px 20px;
+    background-color: #2563eb;
     color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 6px;
     font-size: 14px;
-    margin-top: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 8px 0;
-    font-size: 15px;
-}
-
+/* Divider */
 hr {
-    width: 50%;
-    margin: 20px auto;
-    border: 1px solid #ccc;
+    border: none;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 22px auto;
+    width: 80%;
+}
+
+/* Sections */
+section {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+h2 {
+    color: #0f172a;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-left: 3px solid #2563eb;
+    padding-left: 8px;
+}
+
+p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skills-list li {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Projects List */
+.projects-list {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.projects-list li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.projects-list li b {
+    color: #0f172a;
+}
+
+/* Contact Link */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
 }
