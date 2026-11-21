@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/api", require("./routes/authRoutes"));
 
 // Start server after database connection
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
   try {
